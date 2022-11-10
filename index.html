@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- icons file -->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+<html lang="en">
+	<body>
+		<section class="mail">
+			<div class="container">
+				<header>
+					<div class="stars">
+						<img src="/images/green_starr.png" class="green" alt="" />
+						<img src="/images/blue_star.png" class="blue" alt="" />
+						<img src="/images/red_star.png" class="red" alt="" />
+					</div>
+					<div class="logo">
+						<img src="/images/GDSC.png" alt="" />
+					</div>
+					<div class="stars">
+						<img src="/images/green_starr.png" alt="" class="green" />
+						<img src="/images/yellow_star.png" alt="" class="yellow" />
+						<img src="/images/red_star.png" alt="" />
+					</div>
+				</header>
+
+				<!-- start the mail content section -->
+				<div class="mail">
+					<div class="top_section">
+						<div class="mail_text">
+							<h1>Welcome</h1>
+							<p class="first">
+								Lorem <span class="gdsc_word"><span class="g colored">G</span><span class="d colored">D</span><span class="s colored">S</span><span class="c colored">C</span></span> dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas. Molestias repellat provident veritatis minima culpa sed magni illum nam. Suscipit voluptates temporibus omnis quod quos rem ut! Sequi, unde?
+							</p>
+							<p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas. Molestias repellat provident veritatis minima culpa sed magni illum nam. Suscipit voluptates temporibus omnis quod quos rem ut! Sequi, unde?</p>
+						</div>
+						<a class="btn" href="/">Fill the Form</a>
+					</div>
+					<div class="bottom_section">
+						<h3>Have any Question ?</h3>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, explicabo modi quam ab voluptate dolore sunt perspiciatis quis illo nulla quos placeat magnam obcaecati exercitationem <a href="">This is a link</a> .</p>
+						</div>
+					</div>
+				</div>
+				<!-- end the mail content section -->
+
+				<!-- start the contact us section -->
+				<div class="contact_us">
+					<h4>You can Fin Us In :</h4>
+					<div class="icons">
+						<a target="_blank" href=https://www.facebook.com/gdscestin"><i class="uil uil-facebook facebook"></i></a>
+						<a  target="_blank" href="https://www.instagram.com/gdsc_estin/"><i class="uil uil-instagram instagram"></i></a>
+						<a target="_blank" href="https://www.linkedin.com/company/gdsc-estin/"><i class="uil uil-linkedin linkedin"></i></a>
+					</div>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vr distinctio magnam vero ex placeat ullam </p>
+				</div>
+				<!-- end the contact us section -->
+			</div>
+		</section>
+
+		<!-- start the main css style -->
+		<style>
+			/* import the font */
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+			* {
+				box-sizing: border-box;
+				text-decoration: none;
+				padding: 0;
+				margin: 0;
+			}
+			.container {
+				margin: auto;
+				width: 80%;
+				padding: 40px;
+				font-family: "Poppins", sans-serif;
+			}
+			@media (max-width: 768px) {
+				.container {
+					width: 98%;
+					padding: 30px 10px;
+				}
+			}
+			section {
+				max-width: 100vw;
+				min-height: 100vh;
+				background-image: url(/images/BackgroundSample.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			/* start of the header */
+			section .container header {
+				display: flex;
+				justify-content: space-around;
+				gap: 20px;
+				width: 100%;
+			}
+			section .container header .stars {
+				position: relative;
+				flex-basis: 10%;
+			}
+			section .container header .stars img {
+				position: absolute;
+				width: 15px;
+			}
+			section .container header .stars:first-child .green {
+				right: 0;
+			}
+			section .container header .stars:first-child .blue {
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			section .container header .stars:first-child .red {
+				bottom: 0;
+				right: 0;
+			}
+			section .container header .stars:last-child .green {
+				bottom: 0;
+			}
+			section .container header .stars:last-child .yellow {
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			section .container header .logo {
+				display: flex;
+				justify-content: space-around;
+			}
+			section .container header .logo img {
+				width: 130px;
+			}
+			/* end the header */
+
+			/* start the mail section */
+			section .container .mail {
+				margin-top: 20px;
+				background: white;
+				padding: 50px;
+			}
+			@media (max-width: 768px) {
+				section .container .mail {
+					padding: 20px;
+				}
+			}
+			/* start the top section */
+			section .container .mail .top_section .mail_text,
+			section .container .mail .top_section,
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+			}
+			section .container .mail .top_section .mail_text p {
+				text-align: center;
+			}
+			section .container .mail .top_section .mail_text h1 {
+				font-size: 2.2rem;
+			}
+
+			section .container .mail .top_section a {
+				padding: 15px 30px;
+				background: #84aef2;
+				box-shadow: 0px 10px 25px rgba(132, 174, 242, 0.4);
+				border-radius: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				margin-bottom: 20px;
+				transition: 0.4s;
+				font-weight: 400;
+				font-size: 1.1rem;
+			}
+			section .container .mail .top_section a:hover{
+				box-shadow: 0px 10px 40px rgba(8, 98, 241, 0.4);
+				scale: 1.05;
+			}
+			/* end the top section */
+
+			/* start the bottom section */
+			.bottom_section {
+				margin-top: 20px;
+			}
+			.bottom_section h3 {
+				margin-bottom: 10px;
+			}
+			.bottom_section p a {
+				color: #4f80cf;
+				
+			}
+			.bottom_section p a {
+				color: #4f80cf;
+				border-bottom: #4f80cf solid 2px;
+			}
+			/* end the bottom section */
+			/* end the mail section */
+
+			 
+			/* start contact us section */
+               .contact_us{
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				justify-content: center;
+				align-items: center;
+				max-width: 450px;
+			   }
+               .contact_us h4{
+				font-size: 1.4rem;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 0.62);
+				text-decoration: underline;
+			   }
+			     .contact_us .icons i{
+				 font-size: 2rem;
+				 color: rgba(0, 0, 0, 0.62);
+				 transition: 0.4s;
+			   }
+			     .contact_us .icons i.facebook:hover{		 
+				 color: #4f80cf;
+			   }
+			     .contact_us .icons i.linkedin:hover{		 
+				 color: #1157c9;
+			   }
+			     .contact_us .icons i.instagram:hover{		 
+				 color: #e684c5;
+			   }
+			   .contact_us p{				
+				color: rgba(0, 0, 0, 0.62);
+				text-align: center;
+			   }
+			/* end contact us section */
+		</style>
+	</body>
+</html>

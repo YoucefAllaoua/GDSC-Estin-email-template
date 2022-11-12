@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<!-- icons file -->
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-<html lang="en">
-	
+
+
+
+<html lang="en">	
 		<section class="mail">
+			<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 			<div class="container">
 				<header>
 					<div class="stars">
@@ -22,7 +22,7 @@
 					</div>
 				</header>
 
-				<!-- start the mail content section -->
+				
 				<div class="mail">
 					<div class="top_section">
 						<div class="mail_text">
@@ -41,9 +41,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- end the mail content section -->
-
-				<!-- start the contact us section -->
+				
 				<div class="contact_us">
 					<h4>You can Find Us In :</h4>
 					<div class="icons">
@@ -53,23 +51,25 @@
 					</div>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vr distinctio magnam vero ex placeat ullam </p>
 				</div>
-				<!-- end the contact us section -->
+				
 			</div>
 		</section>
 
-		<!-- start the main css style -->
+	
 		<style>
-			/* import the font */
+			
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
-			* {
-				box-sizing: border-box;
+	
+* {
+				-webkit-box-sizing: border-box;
+				        box-sizing: border-box;
 				text-decoration: none;
 				padding: 0;
 				margin: 0;
 			}
 			.container {
 				margin: auto;
-				width: 80%;
+				width: 85%;
 				padding: 40px;
 				font-family: "Poppins", sans-serif;
 			}
@@ -86,16 +86,20 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
-			/* start of the header */
+			
 			section .container header {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				justify-content: space-around;
+				-ms-flex-pack: distribute;
+				    justify-content: space-around;
 				gap: 20px;
 				width: 100%;
 			}
 			section .container header .stars {
 				position: relative;
-				flex-basis: 10%;
+				-ms-flex-preferred-size: 10%;
+				    flex-basis: 10%;
 			}
 			section .container header .stars img {
 				position: absolute;
@@ -106,7 +110,9 @@
 			}
 			section .container header .stars:first-child .blue {
 				top: 50%;
-				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				        transform: translateY(-50%);
 			}
 			section .container header .stars:first-child .red {
 				bottom: 0;
@@ -118,19 +124,22 @@
 			section .container header .stars:last-child .yellow {
 				right: 0;
 				top: 50%;
-				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				        transform: translateY(-50%);
 			}
 
 			section .container header .logo {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				justify-content: space-around;
+				-ms-flex-pack: distribute;
+				    justify-content: space-around;
 			}
 			section .container header .logo img {
 				width: 130px;
 			}
-			/* end the header */
 
-			/* start the mail section */
 			section .container .mail {
 				margin-top: 20px;
 				background: white;
@@ -141,14 +150,23 @@
 					padding: 20px;
 				}
 			}
-			/* start the top section */
+		
 			section .container .mail .top_section .mail_text,
 			section .container .mail .top_section,
 			.container {
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				gap: 20px;
 			}
 			section .container .mail .top_section .mail_text p {
@@ -161,24 +179,32 @@
 			section .container .mail .top_section a {
 				padding: 15px 30px;
 				background: #84aef2;
-				box-shadow: 0px 10px 25px rgba(132, 174, 242, 0.4);
+				-webkit-box-shadow: 0px 10px 25px rgba(132, 174, 242, 0.4);
+				        box-shadow: 0px 10px 25px rgba(132, 174, 242, 0.4);
 				border-radius: 100px;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				justify-content: center;
-				align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				color: white;
 				margin-bottom: 20px;
+				-webkit-transition: 0.4s;
+				-o-transition: 0.4s;
 				transition: 0.4s;
 				font-weight: 400;
 				font-size: 1.1rem;
 			}
 			section .container .mail .top_section a:hover{
-				box-shadow: 0px 10px 40px rgba(8, 98, 241, 0.4);
+				-webkit-box-shadow: 0px 10px 40px rgba(8, 98, 241, 0.4);
+				        box-shadow: 0px 10px 40px rgba(8, 98, 241, 0.4);
 				scale: 1.05;
 			}
-			/* end the top section */
 
-			/* start the bottom section */
 			.bottom_section {
 				margin-top: 20px;
 			}
@@ -193,17 +219,22 @@
 				color: #4f80cf;
 				border-bottom: #4f80cf solid 2px;
 			}
-			/* end the bottom section */
-			/* end the mail section */
 
-			 
-			/* start contact us section */
                .contact_us{
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: column;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
 				gap: 10px;
-				justify-content: center;
-				align-items: center;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 				max-width: 450px;
 			   }
                .contact_us h4{
@@ -215,6 +246,8 @@
 			     .contact_us .icons i{
 				 font-size: 2rem;
 				 color: rgba(0, 0, 0, 0.62);
+				 -webkit-transition: 0.4s;
+				 -o-transition: 0.4s;
 				 transition: 0.4s;
 			   }
 			     .contact_us .icons i.facebook:hover{		 
@@ -230,9 +263,7 @@
 				color: rgba(0, 0, 0, 0.62);
 				text-align: center;
 			   }
-			/* end contact us section */
-
-			/* start gdsc colored word section */
+	
 			.colored{
 				font-weight: bold;
 			}
@@ -248,7 +279,7 @@
 			.c{
 				color: #0F9D58;
 			}
-			/* end gdsc colored word section */
 		</style>
+
 	
 </html>
